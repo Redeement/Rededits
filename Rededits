@@ -1,0 +1,565 @@
+Rededits
+========
+
+version 2;
+minetweaker.clear();
+
+#===============================
+#Define names for various items,
+#for use in this document
+#===============================
+
+
+#item.ingotIron.displayName = "The Iron Ingot";
+
+
+#Vanilla
+
+Cactus = tile.cactus;
+Redstone = item.redstone;
+Ironingot = item.ingotIron;
+Diamond = item.diamond;
+Clock = item.clock;
+Lever = tile.lever;
+Glasspane = tile.thinGlass;
+Flint = item.flint;
+Stonebricks = tile.stonebricksmooth;
+Ironbars = tile.fenceIron;
+Piston = tile.pistonBase;
+Stick = item.stick;
+Chest = tile.chest;
+Coal = item.coal;
+Coalore = tile.oreCoal;
+
+#oreDicts
+
+Woodplank = oreDict.plankWood;
+Steelingot = oreDict.ingotSteel;
+Coppercoil = oreDict.coilCopper;
+Basiccircuit = oreDict.circuitBasic;
+Advancedcircuit = oreDict.circuitAdvanced;
+Elitecircuit = oreDict.circuitElite;
+AnyCactus = oreDict.isCactus;
+Woodgear = oreDict.gearWood;
+Stonegear = oreDict.gearStone;
+Steelgear = oreDict.gearSteel;
+Goldgear = oreDict.gearGold;
+Diamondgear = oreDict.gearDiamond;
+Coppernugget = oreDict.nuggetCopper;
+AnyDiamond = oreDict.gemDiamond;
+Glass = oreDict.glass;
+Ironnugget = oreDict.nuggetIron;
+Cadmiumingot = oreDict.ingotCadmium;
+Nickeldust = oreDict.dustNickel;
+Ironplate = oreDict.plateIron;
+Steelplate = oreDict.plateSteel;
+Sulfur = oreDict.dustSulfur;
+Stonerod = oreDict.stoneRod;
+ItemSawdust = oreDict.dustWood;
+Woodpulp = oreDict.pulpWood;
+
+#Natura
+
+#saguaro = tile.saguaro.block;
+#juice = item.waterdrop;
+
+#Rotarycraft
+
+HSLA = item.shaftcraft.crafting.ingot;
+RoCShaft = item.shaftcraft.crafting.shaft;
+RoCBearing = item.borecraft.crafting.ballbearing;
+RoCWoodgear = item.enginecraft.crafting.woodgear;
+RoCStonegear = item.enginecraft.crafting.stonegear;
+RoCSteelgear = item.shaftcraft.crafting.gear;
+RoCDiamondgear = item.enginecraft.crafting.diamondgear;
+RoCImpeller = item.enginecraft.crafting.impeller;
+RoCFerroplate = item.CraftingItems."5";
+RoCLens = item.misccraft.crafting.lens;
+RoCCircuit = item.borecraft.crafting.pcb;
+RoCMercuryItem = item.modingots."11";
+RoCFerroingot = item.CraftingItems."10";
+RoCBlastfurnace = item.machineplacer."45";
+RoCAnthracite = item.compacts.misc.anthra;
+RoCAnthraciteBlock = tile.decoblock1;
+RoCCoolingfin = item.machineplacer."74";
+RoCStonerod = item.borecraft.crafting.stoneshaft;
+RoCSawdust = item.powder.misc.sawdust;
+RoCCoaloredust = item.extracts.extract.coaldust;
+RoCCoalsolution = item.extracts.extract.coalsolu;
+
+#Railcraft
+
+RaCplateI = items.railcraft.part.plate.iron;
+RaCplateS = items.railcraft.part.plate.steel;
+RaCplateT = items.railcraft.part.plate.tin;
+RaCSteelgear = items.railcraft.part.gear.steel;
+RaCGoldgear = items.railcraft.part.gear.gold.plate;
+
+#Project:Red
+
+PRCoppercoil = item.projectred.core.part.partcoppercoil;
+PRMotor = item.projectred.core.part.partmotor;
+PRSiliconewafer = item.projectred.core.part.partsilicon;
+PRRedsiliconewafer = item.projectred.core.part.partinfusedsilicon;
+PRYellowsiliconewafer = item.projectred.core.part.partenergizedsilicon;
+PRDrawplate = item.projectred.core.drawplate;
+
+
+#Industrialcraft 2 Experimental
+
+ICCoppercoil = items.ic2.itemPartCoil;
+ICMotor = items.ic2.itemPartEleMotor;
+ICTincasing = items.ic2.itemCasingTin;
+ICToolbox = items.ic2.itemToolbox;
+ICMachineblock = items.blockMachine;
+ICMininglaser = items.ic2.itemToolMiningLaser;
+ICAMachineblock = items.blockAdvMachine;
+ICIroncasing = items.ic2.itemCasingIron;
+ICBasiccircuit = items.ic2.itemPartCircuit;
+ICAdvancedcircuit = items.ic2.itemPartCircuitAdv;
+ICInsulatedcopper = items.ic2.itemCable;
+ICCutter = items.ic2.itemToolCutter;
+ICLeadcasing = items.ic2.itemCasingLead;
+ICPlateL = items.ic2.itemPlateLead;
+ICAdvRE = items.ic2.itemAdvBat;
+ICBronzecasing = items.ic2.itemCasingBronze;
+ICSolar = items.blockSolarGenerator;
+ICMacerator = items.blockMacerator;
+ICCompressor = items.blockCompressor;
+ICTransformerLV = items.blockTransformerLV;
+ICMetalformer = items.blockMetalFormer;
+ICCentrifuge = items.blockCentrifuge;
+ICTreetap = items.ic2.itemTreetap;
+ICRubber = items.ic2.itemRubber;
+ICTincable = items.ic2.itemTinCable;
+ICInsulatedtin = items.ic2.itemTinCableI;
+ICCoppercable = items.ic2.itemCableO;
+ICGoldcable = items.ic2.itemGoldCable;
+ICInsulatedgold = items.ic2.itemGoldCableI;
+ICIroncable = items.ic2.itemIronCable;
+ICInsulatediron = items.ic2.itemIronCableI;
+ICGlassfibre = items.ic2.itemGlassCable;
+ICStonedust = items.ic2.itemDustStone;
+ICCoaldust = items.ic2.itemDustCoal;
+
+#Opencomputers
+
+OCTransistor = items."oc:item".Transistor;
+OCPlatter = items."oc:item".Disk;
+OCCardbase = items."oc:item".CardBase;
+OCPrintedcircuit = items."oc:item".PrintedCircuitBoard;
+OCRawCircuit = items."oc:item".RawCircuitBoard;
+OCChip1 = items."oc:item".Microchip0;
+OCChip2 = items."oc:item".Microchip1;
+OCChip3 = items."oc:item".Microchip2;
+OCALU = items."oc:item".ALU;
+OCControlUnit = items."oc:item".ControlUnit;
+OCCPU1 = items."oc:item".CPU0;
+OCCPU2 = items."oc:item".CPU1;
+OCCPU3 = items."oc:item".CPU2;
+OCHDD1 = items."oc:item".HardDiskDrive0;
+OCHDD2 = items."oc:item".HardDiskDrive1;
+OCHDD3 = items."oc:item".HardDiskDrive2;
+OCRAM1 = items."oc:item".Memory0;
+OCRAM15 = items."oc:item".Memory1;
+OCRAM2 = items."oc:item".Memory2;
+OCRAM25 = items."oc:item".Memory3;
+OCRAM3 = items."oc:item".Memory4;
+OCRAM35 = items."oc:item".Memory5;
+OCFloppy = items."oc:item".FloppyDisk;
+OCCapacitor = items."oc:tile".Capacitor;
+OCSolarUpgrade = items."oc:item".UpgradeSolarGenerator;
+OCGeneratorUpgrate = items."oc:item".UpgradeGenerator;
+OCDiskdrive = items."oc:tile".DiskDrive;
+OCCase1 = items."oc:tile".Case0;
+OCCase2 = items."oc:tile".Case1;
+OCCase3 = items."oc:tile".Case2;
+OCGPU1 = items."oc:item".GraphicsCard0;
+OCGPU2 = items."oc:item".GraphicsCard1;
+OCGPU3 = items."oc:item".GraphicsCard2;
+OCServer1 = items."oc:item".Server0;
+OCServer2 = items."oc:item".Server1;
+OCServer3 = items."oc:item".Server2;
+
+#Computercraft
+
+#CCComputer = tile.cccomputer;
+
+#Minefactory Reloaded
+MFRPlastic = item.mfr.plastic.raw;
+MFRSheet = item.mfr.plastic.sheet;
+
+#Tinkers Construct
+TCGlassbucket = item.tconstruct.bucket.Glass;
+TCSteelingot = item.tconstruct.Materials.SteelIngot;
+
+#Factorization
+
+FZBattery = item."factorization:charge_battery";
+FZAcid = item."factorization:acid";
+FZMotor = item."factorization:motor";
+FZLeadcoil = item."factorization:insulated_coil";
+
+#Forestry
+
+FoRSawdust = item.woodPulp;
+
+#Calclavia
+
+CalclaviaCircuitBasic = item."calclavia:circuitBasic";
+CalclaviaCircuitAdvanced = item."calclavia:circuitAdvanced";
+CalclaviaCircuitElite = item."calclavia:circuitElite";
+#CalclaviaSteelDust = item."calclavia:dustSteel";
+
+#Magical Crops
+
+#Squidmeat = item.FoodRaw.rawSquid;
+#CookedSquidmeat = item.FoodMobMeat.cookedSquid;
+#MCMutton = item.FoodRaw;
+#MCCookedMutton = item.FoodMobMeat;
+#MCStrawberry = item.FoodProduce.strawberry;
+
+
+#Thaumcraft
+
+Quicksilver = item.ItemResource."3";
+Quicksilverore = tile.blockCustomOre;
+Quicksilverdrop = item.ItemNugget."5";
+
+#Thermal Expansion
+
+Cinnabar = item.thermalexpansion.material.crystalCinnabar;
+TESawdust = item.thermalexpansion.material.sawdust;
+TECompressedSawdust = item.thermalexpansion.material.sawdustCompressed;
+TELeadconduit = <20278:0>;
+TEHardenedconduit = <20278:1>;
+TERedstoneconduit = <20278:2>;
+
+#Mekanism
+
+MeKCableBasic = item.MultipartTransmitter.BasicUniversalCable;
+MeKCableAdvanced = item.MultipartTransmitter.AdvancedUniversalCable;
+MeKCableElite =  item.MultipartTransmitter.EliteUniversalCable;
+MeKCableUltimate = item.MultipartTransmitter.EliteUniversalCable;
+MeKSawdust = item.Sawdust;
+
+#Buildcraft
+
+BCKinesisstone = item. PipePowerStone;
+BCKinesisiron = item.PipePowerIron;
+BCKinesisgold = item.PipePowerGold;
+BCKinesisdiamond = item.PipePowerDiamond;
+
+#================================
+#Add things to their respective
+#oreDicts, grouped by mod.
+#================================
+
+#Vanilla
+
+oreDict.isCactus.add(Cactus);
+oreDict.gemDiamond.add(Diamond);
+
+#Natura
+
+#oreDict.isCactus.add(saguaro);
+
+#Railcraft
+
+oreDict.plateTin.add(RaCplateT);
+oreDict.plateIron.add(RaCplateI);
+oreDict.plateSteel.add(RaCplateS);
+oreDict.gearSteel.add(RaCSteelgear);
+oreDict.gearGold.add(RaCGoldgear);
+
+#Rotarycraft
+
+oreDict.gearWood.add(RoCWoodgear);
+oreDict.gearStone.add(RoCStonegear);
+oreDict.gearSteel.add(RoCSteelgear);
+oreDict.gearDiamond.add(RoCDiamondgear);
+oreDict.stoneRod.add(RoCStonerod);
+oreDict.woodPulp.add(RoCSawdust);
+
+#Project:Red
+
+oreDict.projredPart.remove(PRSiliconewafer);
+oreDict.waferSilicone.add(PRSiliconewafer);
+oreDict.coilCopper.add(PRCoppercoil);
+
+#Industrialcraft 2 Experimental
+
+oreDict.coilCopper.add(ICCoppercoil);
+oreDict.circuitBasic.remove(ICBasiccircuit);
+oreDict.circuitAdvanced.remove(ICAdvancedcircuit);
+
+#Magical Crops
+
+#oreDict.foodCalamariraw.add(Squidmeat);
+#oreDict.listAllfishraw.add(Squidmeat);
+#oreDict.foodMuttonraw.add(MCMutton);
+#oreDict.listAllmeatraw.add(MCMutton);
+#oreDict.listAllmuttonraw.add(MCMutton;
+
+#Forestry
+
+oreDict.dustWood.add(FoRSawdust);
+
+#Mekanism
+
+oreDict.dustWood.add(MeKSawdust);
+
+#Thermal Expansion
+
+oreDict.dustWood.add(TESawdust);
+oreDict.pulpWood.add(TESawdust);
+
+#=================================
+#Assign fuel values to things
+#=================================
+
+#saguaro.fuel = 150;
+#Sulfur.fuel = 800;
+RoCAnthracite.fuel = 6400;
+RoCAnthraciteBlock.fuel = 64000;
+ICCoaldust.fuel = 1600;
+
+#=============================
+#Unfuck mercury
+#=============================
+
+furnace.removeRecipe(Quicksilver, Quicksilverore);
+furnace.addRecipe(Cinnabar, Quicksilverore, 1.0);
+recipes.remove(Quicksilver);
+recipes.addShapeless(Cinnabar, [RoCMercuryItem]);
+recipes.addShapeless(Quicksilver, [Cinnabar]);
+recipes.addShapeless(Quicksilver, [Quicksilverdrop, Quicksilverdrop, Quicksilverdrop, Quicksilverdrop, Quicksilverdrop, Quicksilverdrop, Quicksilverdrop, Quicksilverdrop, Quicksilverdrop]);
+
+#=============================
+#Fix the cactus juice recipe.
+#=============================
+
+#recipes.removeShaped(juice);
+#recipes.addShaped(juice * 1, [[AnyCactus]]);
+
+#================================
+#Changes to Computercraft Recipes
+#================================
+
+#recipes.removeShaped(CCComputer);
+
+#==============================
+#Changes to Rotarycraft recipes.
+#==============================
+
+recipes.remove(RoCBearing);
+recipes.addShaped(RoCBearing * 16, [[HSLA, null, HSLA], [null, null, null], [HSLA, null, HSLA]]);
+
+recipes.removeShaped(RoCImpeller);
+recipes.addShaped(RoCImpeller, [[null, HSLA, null], [HSLA, Steelgear, HSLA], [null, HSLA, null]]);
+
+recipes.remove(RoCLens);
+recipes.addShaped(RoCLens * 8, [[null, AnyDiamond, null], [AnyDiamond, Glass, AnyDiamond], [null, AnyDiamond, null]]);
+
+recipes.remove(RoCBlastfurnace);
+recipes.addShaped(RoCBlastfurnace, [[Stonebricks, Ironbars, Stonebricks], [Steelplate, null, Steelplate], [Stonebricks, Steelplate, Stonebricks]]);
+
+#==============================
+#Changes to IC2 recipes.
+#==============================
+
+recipes.remove(ICMetalformer);
+recipes.remove(ICMacerator);
+recipes.remove(items.blockCentrifuge);
+recipes.remove(items.blockTransformerLV);
+recipes.remove(ICSolar);
+recipes.addShaped(ICTransformerLV, [[Woodplank, items.ic2.itemTinCableI, Woodplank], [Woodplank, Coppercoil, Woodplank], [Woodplank, items.ic2.itemTinCableI, Woodplank]]);
+recipes.addShaped(ICMetalformer, [[null, Basiccircuit, null], [ICToolbox, ICMachineblock, ICToolbox], [Coppercoil, Coppercoil, Coppercoil]]);
+recipes.addShaped(ICCentrifuge, [[Coppercoil, ICMininglaser, Coppercoil], [Ironingot, ICAMachineblock, Ironingot], [Ironingot, ICMotor, Ironingot]]);
+recipes.addShaped(ICMacerator, [[Flint, Flint, Flint], [Ironplate, FZMotor, Ironplate], [Ironplate, ICBasiccircuit, Ironplate]]);
+recipes.addShaped(ICSolar, [[Glasspane, Glasspane, Glasspane], [PRSiliconewafer, PRSiliconewafer, PRSiliconewafer], [Ironplate, ICBasiccircuit, Ironplate]]);
+
+recipes.addShaped(ICAdvRE, [[ICInsulatedcopper, ICBronzecasing, ICInsulatedcopper], [ICBronzecasing, Nickeldust, ICBronzecasing], [ICBronzecasing, Cadmiumingot, ICBronzecasing]]);
+
+recipes.remove(ICMotor);
+recipes.addShaped(ICMotor, [[null, ICTincasing, null], [Coppercoil, RoCShaft, Coppercoil], [null, ICTincasing, null]]);
+recipes.addShaped(ICMotor, [[null, Coppercoil, null], [ICTincasing, RoCShaft, ICTincasing], [null, Coppercoil, null]]);
+
+recipes.addShaped(ICTreetap, [[null, Woodplank, null], [Woodplank, Woodplank, Woodplank], [null, null, Woodplank]]);
+
+modSupport.ic2.macerator.addRecipe(RoCCoaloredust * 2, Coalore);
+modSupport.ic2.oreWashingPlant.addRecipe([RoCCoalsolution, RoCAnthracite, ICStonedust], RoCCoaloredust);
+modSupport.ic2.thermalCentrifuge.addRecipe([Coal, ICCoaldust], RoCCoalsolution, 500);
+
+#===============================
+#Changes to P:R recipes.
+#===============================
+
+recipes.remove(PRMotor);
+recipes.addShaped(PRMotor, [[null, Ironingot, null], [tile.stone, Coppercoil, tile.stone], [Redstone, Coppercoil, Redstone]]);
+
+#===============================
+#Changes to Tinkers Recipes
+#===============================
+
+#furnace.removeRecipe(TCSteelingot, CalclaviaSteelDust);
+
+#===============================
+#Changes to Magic Crops recipes
+#===============================
+
+#furnace.removeRecipe(CookedSquidmeat, Squidmeat);
+#furnace.removeRecipe(MCCookedMutton, MCMutton);
+
+
+#===============================
+#Changes to FZ recipes.
+#===============================
+
+recipes.remove(FZBattery);
+recipes.addShaped(FZBattery, [[Ironnugget, ICPlateL, Ironnugget], [ICLeadcasing, FZAcid, ICLeadcasing], [ICLeadcasing, ICPlateL, ICLeadcasing]]);
+
+recipes.remove(FZMotor);
+recipes.addShaped(FZMotor, [[FZLeadcoil, RoCShaft, FZLeadcoil], [FZLeadcoil, RoCFerroingot, FZLeadcoil], [ICPlateL, ICPlateL, ICPlateL]]);
+
+
+#================================
+#Changes to OpenComputers Recipes
+#================================
+
+recipes.removeShaped(OCSolarUpgrade);
+recipes.addShapeless(OCSolarUpgrade, [OCGeneratorUpgrate, ICSolar]);
+
+#================================
+#Changes to Thermal Expansion Recipes
+#================================
+
+recipes.remove(TECompressedSawdust);
+modSupport.ic2.compressor.addRecipe(TECompressedSawdust, ItemSawdust * 8);
+modSupport.ic2.compressor.addRecipe(TECompressedSawdust, Woodpulp * 8);
+
+#================================
+#Overhaul the circuit system
+#================================
+
+recipes.remove(OCCapacitor);
+recipes.addShaped(OCCapacitor, [[Ironingot, OCTransistor, Ironingot], [ICAdvRE, OCChip1, ICAdvRE], [Ironingot, OCPrintedcircuit, Ironingot]]);
+
+recipes.remove(OCFloppy);
+recipes.addShaped(OCFloppy, [[null, Lever, null], [MFRSheet, OCPlatter, MFRSheet], [null, MFRSheet, null]]);
+
+recipes.remove(RoCCircuit);
+recipes.addShaped(RoCCircuit, [[Coppernugget, OCChip1, OCChip1], [null, CalclaviaCircuitAdvanced, Coppernugget], [null, Coppernugget, Coppernugget]]);
+
+recipes.remove(OCHDD1);
+recipes.remove(OCHDD2);
+recipes.remove(OCHDD3);
+recipes.addShaped(OCHDD1, [[OCChip1, OCPlatter, ICIroncasing], [OCPrintedcircuit, OCPlatter, ICMotor], [OCChip1, OCPlatter, ICIroncasing]]);
+recipes.addShaped(OCHDD2, [[OCChip2, OCPlatter, ICIroncasing], [CalclaviaCircuitBasic, OCPlatter, ICMotor], [OCChip2, OCPlatter, ICIroncasing]]);
+recipes.addShaped(OCHDD3, [[OCChip3, OCPlatter, ICIroncasing], [CalclaviaCircuitAdvanced, OCPlatter, ICMotor], [OCChip3, OCPlatter, ICIroncasing]]);
+
+recipes.remove(OCALU);
+recipes.addShaped(OCALU, [[Coppernugget, Redstone, Coppernugget], [OCTransistor, OCChip1, OCTransistor], [Coppernugget, OCTransistor, Coppernugget]]);
+
+recipes.remove(OCControlUnit);
+recipes.addShaped(OCControlUnit, [[Coppernugget, Redstone, Coppernugget], [OCTransistor, Clock, OCTransistor], [Coppernugget, OCTransistor, Coppernugget]]);
+
+recipes.remove(OCCPU1);
+recipes.remove(OCCPU2);
+recipes.remove(OCCPU3);
+recipes.addShaped(OCCPU1, [[Coppernugget, Redstone, Coppernugget], [OCChip1, OCControlUnit, OCChip1], [Coppernugget, OCALU, Coppernugget]]);
+recipes.addShaped(OCCPU2, [[Coppernugget, RoCCoolingfin, Coppernugget], [OCChip2, OCControlUnit, OCChip2], [Coppernugget, OCALU, Coppernugget]]);
+recipes.addShaped(OCCPU3, [[Coppernugget, RoCCoolingfin, Coppernugget], [OCChip3, OCControlUnit, OCChip3], [Coppernugget, OCALU, Coppernugget]]);
+
+recipes.remove(OCChip1);
+recipes.remove(OCChip2);
+recipes.remove(OCChip3);
+recipes.addShaped(OCChip1, [[OCTransistor, OCTransistor], [OCTransistor, OCTransistor]]);
+recipes.addShaped(OCChip2, [[OCChip1, OCChip1, null], [OCChip1, OCChip1, null]]);
+recipes.addShaped(OCChip3, [[OCChip2, OCChip2, null], [OCChip2, OCChip2, null]]);
+
+recipes.remove(OCTransistor);
+recipes.addShaped(OCTransistor * 64, [[Coppernugget, Coppernugget, Coppernugget], [PRRedsiliconewafer, PRYellowsiliconewafer, PRRedsiliconewafer], [null, MFRPlastic, null]]);
+recipes.addShaped(OCTransistor * 64, [[Coppernugget, Coppernugget, Coppernugget], [PRYellowsiliconewafer, PRRedsiliconewafer, PRYellowsiliconewafer], [null, MFRPlastic, null]]);
+
+recipes.remove(OCPlatter);
+recipes.addShapeless(OCPlatter, [RoCFerroplate, ICCutter]);
+
+recipes.remove(OCCardbase);
+recipes.addShaped(OCCardbase * 2, [[ICIroncasing, OCPrintedcircuit, null], [Coppernugget, Coppernugget, Coppernugget], [null, null, null]]);
+
+recipes.remove(OCRawCircuit);
+recipes.addShapeless(OCRawCircuit, [PRDrawplate, TCGlassbucket, Coppernugget, MFRPlastic]);
+
+minetweaker.remove(CalclaviaCircuitBasic);
+minetweaker.remove(CalclaviaCircuitAdvanced);
+minetweaker.remove(CalclaviaCircuitElite);
+minetweaker.remove(OCPrintedcircuit);
+modSupport.buildcraft.assemblyTable.addRecipe(OCPrintedcircuit, 500, [OCRawCircuit]);
+modSupport.buildcraft.assemblyTable.addRecipe(CalclaviaCircuitBasic, 1000, [OCRawCircuit]);
+modSupport.buildcraft.assemblyTable.addRecipe(CalclaviaCircuitAdvanced, 2000, [OCRawCircuit]);
+modSupport.buildcraft.assemblyTable.addRecipe(CalclaviaCircuitElite, 4000, [OCRawCircuit]);
+
+recipes.remove(ICAdvancedcircuit);
+recipes.remove(ICBasiccircuit);
+recipes.addShaped(ICBasiccircuit, [[ICInsulatedcopper, ICInsulatedcopper, ICInsulatedcopper], [Redstone, OCPrintedcircuit, Redstone], [ICInsulatedcopper, ICInsulatedcopper, ICInsulatedcopper]]);
+recipes.addShaped(ICBasiccircuit, [[ICInsulatedcopper, Redstone, ICInsulatedcopper], [ICInsulatedcopper, OCPrintedcircuit, ICInsulatedcopper], [ICInsulatedcopper, Redstone, ICInsulatedcopper]]);
+recipes.addShaped(ICAdvancedcircuit, [[ICInsulatedcopper, OCChip3, ICInsulatedcopper], [OCCPU1, Elitecircuit, OCRAM1], [ICInsulatedcopper, OCChip3, ICInsulatedcopper]]);
+
+recipes.remove(OCRAM1);
+recipes.remove(OCRAM15);
+recipes.remove(OCRAM2);
+recipes.remove(OCRAM25);
+recipes.remove(OCRAM3);
+recipes.remove(OCRAM35);
+recipes.addShaped(OCRAM1, [[OCChip1, null, OCChip1], [Coppernugget, OCPrintedcircuit, Coppernugget]]);
+recipes.addShaped(OCRAM15, [[OCChip1, OCChip1, OCChip1], [Coppernugget, OCPrintedcircuit, Coppernugget]]);
+recipes.addShaped(OCRAM2, [[OCChip2, null, OCChip2], [Coppernugget, OCPrintedcircuit, Coppernugget]]);
+recipes.addShaped(OCRAM25, [[OCChip2, OCChip2, OCChip2], [Coppernugget, OCPrintedcircuit, Coppernugget]]);
+recipes.addShaped(OCRAM3, [[OCChip3, null, OCChip3], [Coppernugget, OCPrintedcircuit, Coppernugget]]);
+recipes.addShaped(OCRAM35, [[OCChip3, OCChip3, OCChip3], [Coppernugget, OCPrintedcircuit, Coppernugget]]);
+
+recipes.remove(OCDiskdrive);
+recipes.addShaped(OCDiskdrive, [[Ironingot, OCChip1, Ironingot], [ICMotor, Stick, null], [Ironingot, OCPrintedcircuit, Ironingot]]);
+
+recipes.remove(OCCase1);
+recipes.remove(OCCase2);
+recipes.remove(OCCase3);
+recipes.addShaped(OCCase1, [[Ironplate, RoCCoolingfin, Ironplate], [Ironbars, OCChip1, Ironbars], [Ironplate, CalclaviaCircuitBasic, Ironplate]]);
+recipes.addShaped(OCCase2, [[Ironplate, RoCCoolingfin, Ironplate], [Ironbars, OCChip2, Ironbars], [Ironplate, CalclaviaCircuitAdvanced, Ironplate]]);
+recipes.addShaped(OCCase3, [[Ironplate, RoCCoolingfin, Ironplate], [Ironbars, OCChip3, Ironbars], [Ironplate, CalclaviaCircuitElite, Ironplate]]);
+
+recipes.remove(OCGPU1);
+recipes.remove(OCGPU2);
+recipes.remove(OCGPU3);
+recipes.addShaped(OCGPU1, [[null, OCALU, OCRAM1], [OCChip1, OCALU, OCRAM1], [null, OCCardbase, null]]);
+recipes.addShaped(OCGPU2, [[null, OCALU, OCRAM1], [OCChip2, OCALU, OCRAM2], [null, OCCardbase, null]]);
+recipes.addShaped(OCGPU3, [[OCALU, OCALU, OCRAM3], [OCALU, OCALU, OCRAM3], [OCChip3, OCCardbase, null]]);
+
+recipes.remove(OCServer1);
+recipes.remove(OCServer2);
+recipes.remove(OCServer3);
+recipes.addShaped(OCServer1, [[ICMotor, RoCImpeller, RoCCoolingfin], [OCChip1, OCChip1, OCChip2], [CalclaviaCircuitBasic, CalclaviaCircuitBasic, CalclaviaCircuitBasic]]);
+recipes.addShaped(OCServer2, [[ICMotor, RoCImpeller, RoCCoolingfin], [OCChip2, OCChip2, OCChip3], [CalclaviaCircuitAdvanced, CalclaviaCircuitAdvanced, CalclaviaCircuitAdvanced]]);
+recipes.addShaped(OCServer3, [[ICMotor, RoCImpeller, RoCCoolingfin], [OCChip3, OCChip3, OCChip3], [CalclaviaCircuitElite, CalclaviaCircuitElite, CalclaviaCircuitElite]]);
+
+#==================================
+#Fuck with Mekanism
+#==================================
+
+recipes.remove(MeKCableBasic);
+recipes.remove(MeKCableAdvanced);
+recipes.remove(MeKCableElite);
+recipes.remove(MeKCableUltimate);
+recipes.addShaped(MeKCableBasic, [[ICRubber, BCKinesisstone, ICRubber], [TELeadconduit, MFRSheet, TELeadconduit], [ICRubber, ICTincable, ICRubber]]);
+recipes.addShaped(MeKCableAdvanced, [[ICRubber, BCKinesisiron, ICRubber], [TEHardenedconduit, MFRSheet, TEHardenedconduit], [ICRubber, ICCoppercable, ICRubber]]);
+recipes.addShaped(MeKCableElite, [[ICRubber, BCKinesisgold, ICRubber], [MFRSheet, TERedstoneconduit, MFRSheet], [ICRubber, ICGoldcable, ICRubber]]);
+recipes.addShaped(MeKCableUltimate, [[ICRubber, BCKinesisdiamond, ICRubber], [MFRSheet, TERedstoneconduit, MFRSheet], [ICRubber, ICIroncable, ICRubber]]);
+
+
+
+
+
+
+
+
