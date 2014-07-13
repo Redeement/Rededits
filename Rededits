@@ -198,6 +198,7 @@ FZAcid = item."factorization:acid";
 FZMotor = item."factorization:motor";
 FZLeadcoil = item."factorization:insulated_coil";
 
+
 #Forestry
 
 FoRSawdust = item.woodPulp;
@@ -389,6 +390,11 @@ recipes.addShaped(ICTreetap, [[null, Woodplank, null], [Woodplank, Woodplank, Wo
 modSupport.ic2.macerator.addRecipe(RoCCoaloredust * 2, Coalore);
 modSupport.ic2.oreWashingPlant.addRecipe([RoCCoalsolution, RoCAnthracite, ICStonedust], RoCCoaloredust);
 modSupport.ic2.thermalCentrifuge.addRecipe([Coal, ICCoaldust], RoCCoalsolution, 500);
+
+modSupport.ic2.compressor.addRecipe(TECompressedSawdust, TESawdust * 8);
+modSupport.ic2.compressor.addRecipe(TECompressedSawdust, RoCSawdust * 8);
+modSupport.ic2.compressor.addRecipe(TECompressedSawdust, FoRSawdust * 8);
+modSupport.ic2.compressor.addRecipe(TECompressedSawdust, MeKSawdust * 8);
 
 #===============================
 #Changes to P:R recipes.
