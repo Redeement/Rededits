@@ -1,6 +1,3 @@
-Rededits
-========
-
 version 2;
 minetweaker.clear();
 
@@ -435,8 +432,10 @@ recipes.addShapeless(OCSolarUpgrade, [OCGeneratorUpgrate, ICSolar]);
 #================================
 
 recipes.remove(TECompressedSawdust);
-modSupport.ic2.compressor.addRecipe(TECompressedSawdust, ItemSawdust * 8);
-modSupport.ic2.compressor.addRecipe(TECompressedSawdust, Woodpulp * 8);
+modSupport.ic2.compressor.addRecipe(TECompressedSawdust, TESawdust * 8);
+modSupport.ic2.compressor.addRecipe(TECompressedSawdust, RoCSawdust * 8);
+modSupport.ic2.compressor.addRecipe(TECompressedSawdust, FoRSawdust * 8);
+modSupport.ic2.compressor.addRecipe(TECompressedSawdust, MeKSawdust * 8);
 
 #================================
 #Overhaul the circuit system
