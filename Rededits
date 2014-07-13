@@ -82,6 +82,7 @@ RoCCoolingfin = item.machineplacer."74";
 RoCStonerod = item.borecraft.crafting.stoneshaft;
 RoCSawdust = item.powder.misc.sawdust;
 RoCCoaloredust = item.extracts.extract.coaldust;
+RoCCoaldust = item.powder.misc.coaldust;
 RoCCoalsolution = item.extracts.extract.coalsolu;
 
 #Railcraft
@@ -320,6 +321,7 @@ oreDict.pulpWood.add(TESawdust);
 RoCAnthracite.fuel = 6400;
 RoCAnthraciteBlock.fuel = 64000;
 ICCoaldust.fuel = 1600;
+RoCCoaldust.fuel = 1600;
 
 #=============================
 #Unfuck mercury
@@ -432,10 +434,8 @@ recipes.addShapeless(OCSolarUpgrade, [OCGeneratorUpgrate, ICSolar]);
 #================================
 
 recipes.remove(TECompressedSawdust);
-modSupport.ic2.compressor.addRecipe(TECompressedSawdust, TESawdust * 8);
-modSupport.ic2.compressor.addRecipe(TECompressedSawdust, RoCSawdust * 8);
-modSupport.ic2.compressor.addRecipe(TECompressedSawdust, FoRSawdust * 8);
-modSupport.ic2.compressor.addRecipe(TECompressedSawdust, MeKSawdust * 8);
+modSupport.ic2.compressor.addRecipe(TECompressedSawdust, ItemSawdust * 8);
+modSupport.ic2.compressor.addRecipe(TECompressedSawdust, Woodpulp * 8);
 
 #================================
 #Overhaul the circuit system
