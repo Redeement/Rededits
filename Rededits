@@ -82,7 +82,6 @@ RoCCoolingfin = item.machineplacer."74";
 RoCStonerod = item.borecraft.crafting.stoneshaft;
 RoCSawdust = item.powder.misc.sawdust;
 RoCCoaloredust = item.extracts.extract.coaldust;
-RoCCoaldust = item.powder.misc.coaldust;
 RoCCoalsolution = item.extracts.extract.coalsolu;
 
 #Railcraft
@@ -317,7 +316,7 @@ oreDict.pulpWood.add(TESawdust);
 #=================================
 
 #saguaro.fuel = 150;
-Sulfur.any.fuel = 800;
+#Sulfur.any.fuel = 800;
 RoCAnthracite.fuel = 6400;
 RoCAnthraciteBlock.fuel = 64000;
 ICCoaldust.fuel = 1600;
