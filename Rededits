@@ -6,6 +6,10 @@ minetweaker.clear();
 #for use in this document
 #===============================
 
+
+#item.ingotIron.displayName = "The Iron Ingot";
+
+
 #Vanilla
 
 Cactus = tile.cactus;
@@ -51,36 +55,52 @@ Stonerod = oreDict.stoneRod;
 ItemSawdust = oreDict.dustWood;
 Woodpulp = oreDict.pulpWood;
 
-#==================================================
+#Natura
 
-#Buildcraft
+#saguaro = tile.saguaro.block;
+#juice = item.waterdrop;
 
-BCKinesisstone = item. PipePowerStone;
-BCKinesisiron = item.PipePowerIron;
-BCKinesisgold = item.PipePowerGold;
-BCKinesisdiamond = item.PipePowerDiamond;
+#Rotarycraft
 
-#Calclavia
+HSLA = item.shaftcraft.crafting.ingot;
+RoCShaft = item.shaftcraft.crafting.shaft;
+RoCBearing = item.borecraft.crafting.ballbearing;
+RoCWoodgear = item.enginecraft.crafting.woodgear;
+RoCStonegear = item.enginecraft.crafting.stonegear;
+RoCSteelgear = item.shaftcraft.crafting.gear;
+RoCDiamondgear = item.enginecraft.crafting.diamondgear;
+RoCImpeller = item.enginecraft.crafting.impeller;
+RoCFerroplate = item.CraftingItems."5";
+RoCLens = item.misccraft.crafting.lens;
+RoCCircuit = item.borecraft.crafting.pcb;
+RoCMercuryItem = item.modingots."11";
+RoCFerroingot = item.CraftingItems."10";
+RoCBlastfurnace = item.machineplacer."45";
+RoCAnthracite = item.compacts.misc.anthra;
+RoCAnthraciteBlock = tile.decoblock1;
+RoCCoolingfin = item.machineplacer."74";
+RoCStonerod = item.borecraft.crafting.stoneshaft;
+RoCSawdust = item.powder.misc.sawdust;
+RoCCoaloredust = item.extracts.extract.coaldust;
+RoCCoalsolution = item.extracts.extract.coalsolu;
 
-CalclaviaCircuitBasic = item."calclavia:circuitBasic";
-CalclaviaCircuitAdvanced = item."calclavia:circuitAdvanced";
-CalclaviaCircuitElite = item."calclavia:circuitElite";
-#CalclaviaSteelDust = item."calclavia:dustSteel";
+#Railcraft
 
-#Computercraft
+RaCplateI = items.railcraft.part.plate.iron;
+RaCplateS = items.railcraft.part.plate.steel;
+RaCplateT = items.railcraft.part.plate.tin;
+RaCSteelgear = items.railcraft.part.gear.steel;
+RaCGoldgear = items.railcraft.part.gear.gold.plate;
 
-#CCComputer = tile.cccomputer;
+#Project:Red
 
-#Factorization
+PRCoppercoil = item.projectred.core.part.partcoppercoil;
+PRMotor = item.projectred.core.part.partmotor;
+PRSiliconewafer = item.projectred.core.part.partsilicon;
+PRRedsiliconewafer = item.projectred.core.part.partinfusedsilicon;
+PRYellowsiliconewafer = item.projectred.core.part.partenergizedsilicon;
+PRDrawplate = item.projectred.core.drawplate;
 
-FZBattery = item."factorization:charge_battery";
-FZAcid = item."factorization:acid";
-FZMotor = item."factorization:motor";
-FZLeadcoil = item."factorization:insulated_coil";
-
-#Forestry
-
-FoRSawdust = item.woodPulp;
 
 #Industrialcraft 2 Experimental
 
@@ -118,31 +138,6 @@ ICInsulatediron = items.ic2.itemIronCableI;
 ICGlassfibre = items.ic2.itemGlassCable;
 ICStonedust = items.ic2.itemDustStone;
 ICCoaldust = items.ic2.itemDustCoal;
-
-#Magical Crops
-
-#Squidmeat = item.FoodRaw.rawSquid;
-#CookedSquidmeat = item.FoodMobMeat.cookedSquid;
-#MCMutton = item.FoodRaw;
-#MCCookedMutton = item.FoodMobMeat;
-#MCStrawberry = item.FoodProduce.strawberry;
-
-#Mekanism
-
-MeKCableBasic = item.MultipartTransmitter.BasicUniversalCable;
-MeKCableAdvanced = item.MultipartTransmitter.AdvancedUniversalCable;
-MeKCableElite =  item.MultipartTransmitter.EliteUniversalCable;
-MeKCableUltimate = item.MultipartTransmitter.EliteUniversalCable;
-MeKSawdust = item.Sawdust;
-
-#Minefactory Reloaded
-MFRPlastic = item.mfr.plastic.raw;
-MFRSheet = item.mfr.plastic.sheet;
-
-#Natura
-
-#saguaro = tile.saguaro.block;
-#juice = item.waterdrop;
 
 #Opencomputers
 
@@ -183,47 +178,44 @@ OCServer1 = items."oc:item".Server0;
 OCServer2 = items."oc:item".Server1;
 OCServer3 = items."oc:item".Server2;
 
-#Project:Red
+#Computercraft
 
-PRCoppercoil = item.projectred.core.part.partcoppercoil;
-PRMotor = item.projectred.core.part.partmotor;
-PRSiliconewafer = item.projectred.core.part.partsilicon;
-PRRedsiliconewafer = item.projectred.core.part.partinfusedsilicon;
-PRYellowsiliconewafer = item.projectred.core.part.partenergizedsilicon;
-PRDrawplate = item.projectred.core.drawplate;
+#CCComputer = tile.cccomputer;
 
-#Railcraft
+#Minefactory Reloaded
+MFRPlastic = item.mfr.plastic.raw;
+MFRSheet = item.mfr.plastic.sheet;
 
-RaCplateI = items.railcraft.part.plate.iron;
-RaCplateS = items.railcraft.part.plate.steel;
-RaCplateT = items.railcraft.part.plate.tin;
-RaCSteelgear = items.railcraft.part.gear.steel;
-RaCGoldgear = items.railcraft.part.gear.gold.plate;
+#Tinkers Construct
+TCGlassbucket = item.tconstruct.bucket.Glass;
+TCSteelingot = item.tconstruct.Materials.SteelIngot;
 
-#Rotarycraft
+#Factorization
 
-HSLA = item.shaftcraft.crafting.ingot;
-RoCShaft = item.shaftcraft.crafting.shaft;
-RoCBearing = item.borecraft.crafting.ballbearing;
-RoCWoodgear = item.enginecraft.crafting.woodgear;
-RoCStonegear = item.enginecraft.crafting.stonegear;
-RoCSteelgear = item.shaftcraft.crafting.gear;
-RoCDiamondgear = item.enginecraft.crafting.diamondgear;
-RoCImpeller = item.enginecraft.crafting.impeller;
-RoCFerroplate = item.CraftingItems."5";
-RoCLens = item.misccraft.crafting.lens;
-RoCCircuit = item.borecraft.crafting.pcb;
-RoCMercuryItem = item.modingots."11";
-RoCFerroingot = item.CraftingItems."10";
-RoCBlastfurnace = item.machineplacer."45";
-RoCAnthracite = item.compacts.misc.anthra;
-RoCAnthraciteBlock = tile.decoblock1;
-RoCCoolingfin = item.machineplacer."74";
-RoCStonerod = item.borecraft.crafting.stoneshaft;
-RoCSawdust = item.powder.misc.sawdust;
-RoCCoaloredust = item.extracts.extract.coaldust;
-RoCCoaldust = item.powder.misc.coaldust;
-RoCCoalsolution = item.extracts.extract.coalsolu;
+FZBattery = item."factorization:charge_battery";
+FZAcid = item."factorization:acid";
+FZMotor = item."factorization:motor";
+FZLeadcoil = item."factorization:insulated_coil";
+
+#Forestry
+
+FoRSawdust = item.woodPulp;
+
+#Calclavia
+
+CalclaviaCircuitBasic = item."calclavia:circuitBasic";
+CalclaviaCircuitAdvanced = item."calclavia:circuitAdvanced";
+CalclaviaCircuitElite = item."calclavia:circuitElite";
+#CalclaviaSteelDust = item."calclavia:dustSteel";
+
+#Magical Crops
+
+#Squidmeat = item.FoodRaw.rawSquid;
+#CookedSquidmeat = item.FoodMobMeat.cookedSquid;
+#MCMutton = item.FoodRaw;
+#MCCookedMutton = item.FoodMobMeat;
+#MCStrawberry = item.FoodProduce.strawberry;
+
 
 #Thaumcraft
 
@@ -240,9 +232,20 @@ TELeadconduit = <20278:0>;
 TEHardenedconduit = <20278:1>;
 TERedstoneconduit = <20278:2>;
 
-#Tinkers Construct
-TCGlassbucket = item.tconstruct.bucket.Glass;
-TCSteelingot = item.tconstruct.Materials.SteelIngot;
+#Mekanism
+
+MeKCableBasic = item.MultipartTransmitter.BasicUniversalCable;
+MeKCableAdvanced = item.MultipartTransmitter.AdvancedUniversalCable;
+MeKCableElite =  item.MultipartTransmitter.EliteUniversalCable;
+MeKCableUltimate = item.MultipartTransmitter.EliteUniversalCable;
+MeKSawdust = item.Sawdust;
+
+#Buildcraft
+
+BCKinesisstone = item. PipePowerStone;
+BCKinesisiron = item.PipePowerIron;
+BCKinesisgold = item.PipePowerGold;
+BCKinesisdiamond = item.PipePowerDiamond;
 
 #================================
 #Add things to their respective
@@ -313,11 +316,10 @@ oreDict.pulpWood.add(TESawdust);
 #=================================
 
 #saguaro.fuel = 150;
-Sulfur.any.fuel = 800;
+#Sulfur.any.fuel = 800;
 RoCAnthracite.fuel = 6400;
 RoCAnthraciteBlock.fuel = 64000;
 ICCoaldust.fuel = 1600;
-RoCCoaldust.fuel = 1600;
 
 #=============================
 #Unfuck mercury
