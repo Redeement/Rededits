@@ -6,8 +6,6 @@ minetweaker.clear();
 #for use in this document
 #===============================
 
-#item.ingotIron.displayName = "The Iron Ingot";
-
 
 #Vanilla
 
