@@ -313,7 +313,7 @@ oreDict.pulpWood.add(TESawdust);
 #=================================
 
 #saguaro.fuel = 150;
-#Sulfur.fuel = 800;
+Sulfur.any.fuel = 800;
 RoCAnthracite.fuel = 6400;
 RoCAnthraciteBlock.fuel = 64000;
 ICCoaldust.fuel = 1600;
@@ -435,8 +435,10 @@ recipes.addShapeless(OCSolarUpgrade, [OCGeneratorUpgrate, ICSolar]);
 #================================
 
 recipes.remove(TECompressedSawdust);
-modSupport.ic2.compressor.addRecipe(TECompressedSawdust, ItemSawdust * 8);
-modSupport.ic2.compressor.addRecipe(TECompressedSawdust, Woodpulp * 8);
+modSupport.ic2.compressor.addRecipe(TECompressedSawdust, TESawdust * 8);
+modSupport.ic2.compressor.addRecipe(TECompressedSawdust, RoCSawdust * 8);
+modSupport.ic2.compressor.addRecipe(TECompressedSawdust, FoRSawdust * 8);
+modSupport.ic2.compressor.addRecipe(TECompressedSawdust, MeKSawdust * 8);
 
 #================================
 #Overhaul the circuit system
