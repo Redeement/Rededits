@@ -82,6 +82,7 @@ RoCCoolingfin = item.machineplacer."74";
 RoCStonerod = item.borecraft.crafting.stoneshaft;
 RoCSawdust = item.powder.misc.sawdust;
 RoCCoaloredust = item.extracts.extract.coaldust;
+RoCCoaldust = item.powder.misc.coaldust;
 RoCCoalsolution = item.extracts.extract.coalsolu;
 
 #Railcraft
