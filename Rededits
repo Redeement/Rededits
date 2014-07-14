@@ -82,7 +82,6 @@ RoCCoolingfin = item.machineplacer."74";
 RoCStonerod = item.borecraft.crafting.stoneshaft;
 RoCSawdust = item.powder.misc.sawdust;
 RoCCoaloredust = item.extracts.extract.coaldust;
-RoCCoaldust = item.powder.misc.coaldust;
 RoCCoalsolution = item.extracts.extract.coalsolu;
 
 #Railcraft
@@ -197,7 +196,6 @@ FZBattery = item."factorization:charge_battery";
 FZAcid = item."factorization:acid";
 FZMotor = item."factorization:motor";
 FZLeadcoil = item."factorization:insulated_coil";
-
 
 #Forestry
 
@@ -318,11 +316,10 @@ oreDict.pulpWood.add(TESawdust);
 #=================================
 
 #saguaro.fuel = 150;
-#Sulfur.fuel = 800;
+Sulfur.any.fuel = 800;
 RoCAnthracite.fuel = 6400;
 RoCAnthraciteBlock.fuel = 64000;
 ICCoaldust.fuel = 1600;
-RoCCoaldust.fuel = 1600;
 
 #=============================
 #Unfuck mercury
@@ -391,11 +388,6 @@ modSupport.ic2.macerator.addRecipe(RoCCoaloredust * 2, Coalore);
 modSupport.ic2.oreWashingPlant.addRecipe([RoCCoalsolution, RoCAnthracite, ICStonedust], RoCCoaloredust);
 modSupport.ic2.thermalCentrifuge.addRecipe([Coal, ICCoaldust], RoCCoalsolution, 500);
 
-modSupport.ic2.compressor.addRecipe(TECompressedSawdust, TESawdust * 8);
-modSupport.ic2.compressor.addRecipe(TECompressedSawdust, RoCSawdust * 8);
-modSupport.ic2.compressor.addRecipe(TECompressedSawdust, FoRSawdust * 8);
-modSupport.ic2.compressor.addRecipe(TECompressedSawdust, MeKSawdust * 8);
-
 #===============================
 #Changes to P:R recipes.
 #===============================
@@ -440,8 +432,10 @@ recipes.addShapeless(OCSolarUpgrade, [OCGeneratorUpgrate, ICSolar]);
 #================================
 
 recipes.remove(TECompressedSawdust);
-modSupport.ic2.compressor.addRecipe(TECompressedSawdust, ItemSawdust * 8);
-modSupport.ic2.compressor.addRecipe(TECompressedSawdust, Woodpulp * 8);
+modSupport.ic2.compressor.addRecipe(TECompressedSawdust, TESawdust * 8);
+modSupport.ic2.compressor.addRecipe(TECompressedSawdust, RoCSawdust * 8);
+modSupport.ic2.compressor.addRecipe(TECompressedSawdust, FoRSawdust * 8);
+modSupport.ic2.compressor.addRecipe(TECompressedSawdust, MeKSawdust * 8);
 
 #================================
 #Overhaul the circuit system
