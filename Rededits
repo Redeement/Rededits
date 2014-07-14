@@ -6,7 +6,6 @@ minetweaker.clear();
 #for use in this document
 #===============================
 
-#POOP
 
 #item.ingotIron.displayName = "The Iron Ingot";
 
