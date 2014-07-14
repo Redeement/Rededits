@@ -7,9 +7,6 @@ minetweaker.clear();
 #===============================
 
 
-#item.ingotIron.displayName = "The Iron Ingot";
-
-
 #Vanilla
 
 Cactus = tile.cactus;
