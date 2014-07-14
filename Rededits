@@ -6,7 +6,7 @@ minetweaker.clear();
 #for use in this document
 #===============================
 
-#Vanillahhhhhhhhh
+#Vanilla
 
 Cactus = tile.cactus;
 Redstone = item.redstone;
